@@ -1,0 +1,8 @@
+x-spoiler {
+    background: #000!important;
+    color: #000!important;
+    display: block;
+}
+x-spoiler:hover {
+    color: #fff!important;
+}
