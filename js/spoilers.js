@@ -22,7 +22,6 @@ var unspoil = function() {
     var contents = ['.userContent:not([data-spoilers]):contains([Spoiler:])', 'span.UFICommentBody:not([data-spoilers]):contains([Spoiler:])', '.userContent:not([data-spoilers]):contains([spoiler:])', 'span.UFICommentBody:not([data-spoilers]):contains([spoiler:])'];
 
     for(var i = 0; i < contents.length; ++i) {
-        console.log('hello');
         $.each($(contents[i]), function() {
             var text =  $(this).text();
             var start = text.toLowerCase().indexOf("[spoiler:]");
