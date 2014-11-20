@@ -1,0 +1,21 @@
+{
+  "name": "Facebook Spoilers",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "A Chrome Extension that allows people to add spoiler tags to their comments and posts. Hover over the blacked-out text to see the spoiler.",
+  "homepage_url": "https://github.com/novacourtois/facebook_spoilers",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Toggle on/off."
+  },
+  "content_scripts": [{
+    "matches": ["https://www.facebook.com/*"],
+    "css": ["css/style.css"],
+    "js": [ "js/jquery.min.js","js/spoilers.js" ]
+  } ]
+}
